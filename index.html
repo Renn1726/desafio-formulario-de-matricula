@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matricula</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+12&family=Jacquard+24+Charted&family=Jersey+10&family=Jersey+15&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="form-page">
+      <div class="page">
+        <div class="title">
+          <img class="backbt" src="images/backbutton.png" alt="Voltar" />
+          <div class="title-txt-box">
+            <h1 class="titletxt">Formulário de Matricula</h1>
+            <p class="subtitle">
+              Preencha os dados abaixo para matricular seu filho na escola de
+              educação infantil Estrelas do Amanhã.
+            </p>
+          </div>
+
+          <form class="fields">
+            <h1 class="child-information">Informações da criança</h1>
+            <div class="name-box">
+              <label>Nome completo</label>
+              <input class="name-txt-box" type="text" />
+            </div>
+            <div class="birthday-box">
+              <label>Data de nascimento</label>
+              <input class="birthday-date-box" type="date" />
+            </div>
+            <div class="gender-box">
+              <label>Sexo</label>
+              <select class="gender-select-box" name="Sexo" id="Sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+              </select>
+            </div>
+            <div class="medical-info">
+              <label>Informações médicas</label>
+              <textarea
+                class="medical-info-box"
+                name="medical-infos"
+                id=""
+              ></textarea>
+            </div>
+            <div class="birth-certificate">
+              <label>Certidão de nascimento</label>
+              <img src="images/FileUploadField.png" alt="Enviar arquivo" />
+            </div>
+          </form>
+        </div>
+        <div class="address-info">
+          <h1 class="residential-title">Endereço residencial</h1>
+          <div class="postal-code">
+            <label>CEP</label>
+            <input class="zip-code" maxlength="10" type="text" />
+          </div>
+          <div class="street-info">
+            <div class="street">
+              <label>Rua</label>
+              <input type="text" class="street-name" />
+            </div>
+            <div class="street-nmbr">
+              <label>Número</label>
+              <input type="text" maxlength="4" class="house-nmbr" />
+            </div>
+          </div>
+          <div class="loc-info">
+            <div class="city-info">
+              <label>Cidade</label>
+              <input type="text" class="city-name" />
+            </div>
+            <div class="residence-state">
+              <label>Estado</label>
+              <input type="text" maxlength="2" class="state" />
+            </div>
+          </div>
+        </div>
+        <div class="perso-info">
+          <h1 class="parental-info-title">Informações do responsável</h1>
+          <div class="parental-name">
+            <label>Nome do responsável</label>
+            <input type="text" class="parental-name-box" />
+            <span class="alert"
+              >Principal responsável legal e contato de emergência</span
+            >
+          </div>
+          <div class="phone-nmbr">
+            <label>Telefone</label>
+            <input type="tel" class="phone" />
+          </div>
+          <div class="parental-email">
+            <label>E-mail</label>
+            <input type="email" class="email-box" />
+          </div>
+        </div>
+        <div class="registration">
+          <h1 class="register-title">Opções de matrícula</h1>
+          <div class="shifts">
+            <h1 class="shift-title">Selecione o turno de estudo</h1>
+            <div class="shift-selector">
+              <div class="selection-card">
+                <input type="radio" name="turno" class="card-radio" />
+                <div class="card-items">
+                  <img src="images/sun-cloud-02.png" alt="manha" />
+                  <h1 class="card-text">Manhã</h1>
+                </div>
+              </div>
+
+              <div class="selection-card">
+                <input type="radio" name="turno" class="card-radio" />
+                <div class="card-items">
+                  <img src="images/sun-02.png" alt="Sol" />
+                  <h1 class="card-text">Tarde</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sports">
+            <h1 class="sports-title">
+              Em qual esporte você gostaria de inscrever seu filho?
+            </h1>
+            <div class="options">
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/football.png"
+                    alt="football"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Futebol</h1>
+                </div>
+              </div>
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/basketball-02.png"
+                    alt="basquete"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Basquete</h1>
+                </div>
+              </div>
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/swimming.png"
+                    alt="basquete"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Natação</h1>
+                </div>
+              </div>
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/yoga-02.png"
+                    alt="basquete"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Yoga</h1>
+                </div>
+              </div>
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/volleyball.png"
+                    alt="basquete"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Vôlei</h1>
+                </div>
+              </div>
+              <div class="sport-opt">
+                <div class="sport-items">
+                  <input type="radio" class="sport-radio" />
+                  <img
+                    src="images/boxing-glove-01.png"
+                    alt="basquete"
+                    class="sport-img"
+                  />
+                  <h1 class="sport-text">Box</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="terms">
+          <input type="checkbox" class="check-terms" />
+          <h1 class="terms-txt">
+            Declaro que li e concordo com os
+            <span class="red">Termos e Condições</span> e com a
+            <span class="red">Política de Privacidade</span> da escola Estrela
+            do Amanhã.
+          </h1>
+        </div>
+        <div class="form-buttons">
+          <button class="save-btn">Salvar respostas</button>
+          <button class="confirm-btn">Fazer matrícula</button>
+        </div>
+      </div>
+      <div class="page2">
+        <div class="page2-title">
+          <img class="img-pg2" src="images/Frame 48095956.png" alt="" />
+          <h1 class="title-page2">
+          Porque cada momento de <span class="red-title">aprendizado</span> conta
+        </h1>
+        <h2 class="subtitle-pg2">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</h2>
+        </div>
+        <img class="page2-ilus" src="images/Illustration.png" alt="">
+      </div>
+    </main>
+  </body>
+</html>
